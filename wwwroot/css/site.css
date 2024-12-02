@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navbar background */
+nav {
+    background-color: #333; /* Dark gray background */
+    padding: 10px;
+}
+
+    /* Navbar links */
+    nav ul {
+        list-style-type: none; /* Remove bullets */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Horizontal layout */
+    }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+            nav ul li a {
+                text-decoration: none; /* Remove underline */
+                color: #000; /* Always visible white text */
+                font-size: 16px; /* Adjust font size */
+                padding: 5px 10px; /* Add spacing for better clickability */
+                border-radius: 5px; /* Rounded corners for hover effect */
+                transition: background-color 0.3s, color 0.3s; /* Smooth color change */
+            }
+
+                /* Hover effect */
+                nav ul li a:hover {
+                    background-color: #ffa500; /* Highlight with orange background */
+                    color: #000; /* Black text on hover */
+                }
+
+h1 {
+    color: #333;
+}
+
+html, body {
+    height: 100%; /* Ensures the height of the document is 100% */
+    margin: 0; /* Removes default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Takes up available space, pushing the footer down */
+    padding-bottom: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px; /* Adds space above the footer */
+    position: relative; /* Ensures proper positioning */
+}
